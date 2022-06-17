@@ -1,4 +1,4 @@
 class Recipe < ApplicationRecord
   has_many_attached :photos
-  has_rich
+  has_rich_text :content
 end
