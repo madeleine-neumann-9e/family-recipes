@@ -1,2 +1,6 @@
 %h1 Ingredients#index
-%p Find me in app/views/ingredients/index.html.haml
+= link_to "Neue Zutat", new_backyard_ingredient_path
+- @ingredients.each do |ingredient|
+  %div
+    = ingredient.name_plural_de
+    = link_to "Edit", edit_backyard_ingredient_path(ingredient)

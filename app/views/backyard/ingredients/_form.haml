@@ -1,0 +1,10 @@
+= form_with(model: [:backyard, @ingredient]) do |f|
+  = f.label :name_singular_de
+  = f.text_field :name_singular_de
+  = f.label :name_singular_en
+  = f.text_field :name_singular_en
+  = f.label :name_plural_de
+  = f.text_field :name_plural_de
+  = f.label :name_plural_en
+  = f.text_field :name_plural_en
+  = f.submit
