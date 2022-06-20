@@ -1,5 +1,5 @@
 module Backyard
-  class IngredientsController < ApplicationController
+  class IngredientsController < BackyardController
     def index
       @ingredients = Ingredient.all
     end

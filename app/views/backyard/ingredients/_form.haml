@@ -1,10 +1,18 @@
 = form_with(model: [:backyard, @ingredient]) do |f|
-  = f.label :name_singular_de
-  = f.text_field :name_singular_de
-  = f.label :name_singular_en
-  = f.text_field :name_singular_en
-  = f.label :name_plural_de
-  = f.text_field :name_plural_de
-  = f.label :name_plural_en
-  = f.text_field :name_plural_en
-  = f.submit "Speichern"
+  .field
+    = f.label :name_singular_de, "Name Singular Deutsch", class: "label"
+    .control
+      = f.text_field :name_singular_de, class: "input"
+  .field
+    = f.label :name_plural_de, "Name Plural Deutsch",  class: "label"
+    .control
+      = f.text_field :name_plural_de, class: "input"
+  .field
+    = f.label :name_singular_en, "Name Singular Englisch", class: "label"
+    .control
+      = f.text_field :name_singular_en, class: "input"
+  .field
+    = f.label :name_plural_en, "Name Plural Englisch", class: "label"
+    .control
+      = f.text_field :name_plural_en, class: "input"
+  = f.submit "Speichern", class: "button is-info"
