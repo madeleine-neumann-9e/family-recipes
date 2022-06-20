@@ -1,6 +1,12 @@
 %h1 Ingredients#index
 = link_to "Neue Zutat", new_backyard_ingredient_path
-- @ingredients.each do |ingredient|
-  %div
-    = ingredient.name_plural_de
-    = link_to "Edit", edit_backyard_ingredient_path(ingredient)
+%table
+  %thead
+    %tr
+      %th Name
+      %th	Funktionen
+
+  - @ingredients.each do |ingredient|
+    %tr
+      %td= ingredient.name_plural_de
+      %td.content-end= link_to "Edit", edit_backyard_ingredient_path(ingredient)
