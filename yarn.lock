@@ -966,6 +966,13 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@nathanvda/cocoon@^1.2.14":
+  version "1.2.14"
+  resolved "https://registry.yarnpkg.com/@nathanvda/cocoon/-/cocoon-1.2.14.tgz#aaea910e4b9c0d28d5bdcb7f3743617db46b09af"
+  integrity sha512-WcEt2vVp50de2i7rkD4O+96O1iMtMIcTBNGPocrHfcmHDujKOngoLHFF8Ektgoh8PjwFAJMxx8WyGv0BtKTjxQ==
+  dependencies:
+    jquery "^3.3.1"
+
 "@npmcli/fs@^1.0.0":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@npmcli/fs/-/fs-1.1.1.tgz#72f719fe935e687c56a4faecf3c03d06ba593257"
@@ -2845,6 +2852,11 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
+expose-loader@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/expose-loader/-/expose-loader-4.0.0.tgz#aa6f06f57cbc904175de4fe4eaff6211337e0231"
+  integrity sha512-kUEvHyf6MPR2ubZCL9aziP9Br5wxMvq1cghTpYhM6MW52NPq+7hXixw2EqQuI1SvGb1fDjc2ehJOg6645wR6ww==
+
 express@^4.17.1:
   version "4.18.1"
   resolved "https://registry.yarnpkg.com/express/-/express-4.18.1.tgz#7797de8b9c72c857b9cd0e14a5eea80666267caf"
@@ -3923,6 +3935,11 @@ jest-worker@^26.5.0:
     "@types/node" "*"
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
+
+jquery@^3.3.1, jquery@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
 
 js-tokens@^4.0.0:
   version "4.0.0"
