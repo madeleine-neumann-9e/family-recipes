@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_17_202819) do
+ActiveRecord::Schema.define(version: 2022_06_21_092705) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,6 +60,8 @@ ActiveRecord::Schema.define(version: 2022_06_17_202819) do
     t.string "name_plural_en", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "measurement_de"
+    t.string "measurement_en"
   end
 
   create_table "recipe_ingredients", force: :cascade do |t|

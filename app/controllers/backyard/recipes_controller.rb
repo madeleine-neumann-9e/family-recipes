@@ -4,6 +4,10 @@ module Backyard
       @recipes = Recipe.all
     end
 
+    def show
+      @recipe = Recipe.includes(:recipe_ingredients).find(params[:id])
+    end
+
     def new
       @recipe = Recipe.new
       @url = backyard_recipes_path
@@ -28,11 +32,15 @@ module Backyard
 
     def edit
       @recipe = Recipe.find(params[:id])
+      @ingredients = @recipe.recipe_ingredients
+      @ingredients_dropdown = @ingredients.map do |ingredient|
+        [ingredient.ingredient.name_plural_de, ingredient.ingredient.id]
+      end
     end
 
     def update
       @recipe = Recipe.find(params[:id])
-      @url = backyard_Recipe_path
+      @url = backyard_recipe_path
       if @recipe.update(recipe_params)
         redirect_to backyard_recipes_path
       else

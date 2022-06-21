@@ -1,0 +1,9 @@
+%h1= @recipe.title
+%p= @recipe.content_de
+%p= @recipe.content_en
+- @recipe.recipe_ingredients.each do |ri|
+  %ul
+    %li
+      = ri.ingredient.name_plural_de
+      = ri.ingredient_amount
+      = ri.ingredient.measurement_de

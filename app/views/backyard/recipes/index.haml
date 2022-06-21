@@ -7,5 +7,5 @@
 
   - @recipes.each do |recipe|
     %tr
-      %td= recipe.title
+      %td= link_to recipe.title, backyard_recipe_path(recipe)
       %td= link_to "Edit", edit_backyard_recipe_path(recipe), class: "button is-warning is-small"

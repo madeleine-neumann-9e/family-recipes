@@ -38,7 +38,9 @@ module Backyard
         :name_singular_de,
         :name_singular_en,
         :name_plural_de,
-        :name_plural_en
+        :name_plural_en,
+        :measurement_de,
+        :measurement_en,
       )
     end
   end
