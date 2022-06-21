@@ -1,0 +1,24 @@
+= form_with(model: [:backyard, @recipe]) do |f|
+  .field
+    = f.fields_for :recipe_ingredients, @recipe_ingredient do |ingredient|
+      = render 'recipe_ingredient_fields', f: ingredient
+    .links
+      = link_to_add_association 'add ingredient', f, :recipe_ingredients, class: "button is-info"
+
+  .field
+    = f.label :title, "Titel", class: "label"
+    .control
+      = f.text_field :title, class: "input"
+  .columns
+    .field.column
+      = f.label :content_de, "Rezept Deutsch",  class: "label"
+      .control
+        = f.rich_text_area :content_de, class: "input"
+    .field.column
+      = f.label :content_en, "Rezept Englisch", class: "label"
+      .control
+        = f.rich_text_area :content_en, class: "input"
+
+
+
+  = f.submit "Speichern", class: "button is-info"

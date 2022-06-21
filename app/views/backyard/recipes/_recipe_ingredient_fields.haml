@@ -1,0 +1,10 @@
+.nested-fields
+  .columns
+    .field.column
+      = f.label  :ingredient_id, "Zutat"
+      = f.select :ingredient_id, options_for_select(@ingredients_dropdown)
+      = f.label :ingredient_amount, "Wie viel?"
+      = f.number_field :ingredient_amount, step: 0.1
+
+
+  = link_to_remove_association "remove ingredient", f, class: "button is-info"

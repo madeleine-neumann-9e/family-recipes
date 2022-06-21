@@ -1,0 +1,11 @@
+= link_to "Neues Rezept", new_backyard_recipe_path, class: "button is-primary"
+%table.table.is-fullwidth.is-hoverable.is-striped
+  %thead
+    %tr
+      %th Name
+      %th	Funktionen
+
+  - @recipes.each do |recipe|
+    %tr
+      %td= recipe.title
+      %td= link_to "Edit", edit_backyard_recipe_path(recipe), class: "button is-warning is-small"
